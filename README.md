@@ -8,7 +8,16 @@ You can then ask follow-up questions about the same part.
 
 Powered by Google Gemini (`gemini-pro-latest` by default; override with `GEMINI_MODEL`).
 
-## Run
+## Run on macOS (one step)
+
+Double-click `start.command` in Finder, or run `./start.command` in Terminal. It finds
+Python 3.10+, creates `.venv`, installs dependencies, asks for your Gemini API key the
+first time, then starts the server and opens your browser.
+
+If macOS blocks it ("unidentified developer"), right-click → Open once. If it isn't
+executable after copying, run `chmod +x start.command`.
+
+## Run manually
 
 ```bash
 python3 -m venv .venv
